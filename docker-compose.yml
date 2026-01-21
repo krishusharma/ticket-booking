@@ -22,7 +22,6 @@ services:
     image: redis:7-alpine
     platform: linux/arm64
     container_name: ticket-booking-redis
-    # If your code expects a password, start redis with one
     command: redis-server --requirepass redis@1234
     ports:
       - "6379:6379"
