@@ -45,12 +45,6 @@ public class RedisHelperImpl implements RedisHelper {
         if (redissonClient == null) {
             synchronized (this) {
                 if (redissonClient == null) {
-//                    String host = configuration.getString("redis.host", "127.0.0.1");
-//                    int port = configuration.getInt("redis.port", 6379);
-//
-//                    Config config = new Config();
-//                    config.useSingleServer()
-//                            .setAddress("redis://" + host + ":" + port);
 
                     String host = configuration.getString("redis.host", "127.0.0.1");
                     int port = configuration.getInt("redis.port", 6379);
